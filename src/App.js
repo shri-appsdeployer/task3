@@ -6,6 +6,7 @@ import Home from './components/Home';
 import A from './components/A';
 import B from './components/B';
 import Login from './components/Login';
+import LoginWithHook from './components/Hooks/LoginWithHook';
 
 let credentials =[{
   email:'shri@gmail',
@@ -29,6 +30,8 @@ function App() {
         <Route path='/a' element={<A a={a} b={b} incA={incA} decB={decB} />}/>
         <Route path='/b' element={<B a={a} b={b} decA={decA} incB={incB}/>}/>
         <Route path='/login' element={<Login cred={cred} setCred={setCred}/>} />
+        <Route path='/loginWithHook' element={<LoginWithHook cred={cred} setCred={setCred}/>} />
+
       </Routes>
     </div>
   );

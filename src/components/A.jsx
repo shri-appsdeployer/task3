@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 import '../App.css'
 
-const A = ({a,b,incA,decB}) => {
+function A  ({a,b,incA,decB}) {
   return (
     <div className='wrapper'>
       <h1>Hello, This is Component A.</h1>

@@ -1,8 +1,15 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
 import Button from './Button'
 import '../App.css'
 
 const Home = ({a,b,incA,incB}) => {  
+
+  useEffect(() => {
+      document.title = `Count A:${a}`
+      console.log(`Message from useEffect, Value of a :${a} & b:${b}`)
+  },[a,b])
+  
+
   return (
     <div className='wrapper'>
         <h1>Hello, This is homepage.</h1>
